@@ -23,6 +23,29 @@ img {
   gap: 5px;
   grid-template-rows: 1fr;
 }
+
+/* media query responsive */
+
+@media screen and (max-width: 576px) {
+  .row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .four-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 950px) {
+  .row {
+    flex-direction: column;
+    height: auto;
+  }
+  .four-image {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* .container {
   width: 600px;
 }
@@ -56,13 +79,10 @@ img {
 
 /* 
 
-echo "# complex-layout-practice" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/sakibhasan-24/complex-layout-practice.git
-git push -u origin main
+
+
+
+
 
 
 */
